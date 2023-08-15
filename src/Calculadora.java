@@ -34,6 +34,16 @@ public class Calculadora {
                 double division = (double) numero1 / numero2;
                 System.out.println("La división es " + division);
                 break;
+
+            case '%':
+                int residuo = numero1 % numero2;
+                System.out.println("La división es " + residuo);
+                break;
+
+            case '^':
+                double resultado = Math.pow(numero1,numero2);
+                System.out.println ("El resultado de la potencia es " + resultado);
+                break;
             default:
                 System.out.println("Operación inválida");
         }
